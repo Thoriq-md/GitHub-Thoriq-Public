@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Produk</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Kustom -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .product-img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Daftar Produk</h2>
+
+        <!-- List Kategori Produk -->
+        <h4>Kategori Produk</h4>
+        <ul class="list-group mb-4">
+            <li class="list-group-item">Elektronik</li>
+            <li class="list-group-item">Pakaian</li>
+            <li class="list-group-item">Peralatan Rumah Tangga</li>
+        </ul>
+
+        <!-- Tabel Daftar Produk -->
+        <h4>Produk Tersedia</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Produk</th>
+                    <th>Harga</th>
+                    <th>Detail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Smartphone</td>
+                    <td>Rp 3.500.000</td>
+                    <td><button class="btn btn-info btn-sm detail-btn" data-product="Smartphone - Rp 3.500.000">Lihat</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kaos Polos</td>
+                    <td>Rp 50.000</td>
+                    <td><button class="btn btn-info btn-sm detail-btn" data-product="Kaos Polos - Rp 50.000">Lihat</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Blender</td>
+                    <td>Rp 750.000</td>
+                    <td><button class="btn btn-info btn-sm detail-btn" data-product="Blender - Rp 750.000">Lihat</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Gambar Produk -->
+        <h4>Gambar Produk</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="smartphone.jpg" class="card-img-top product-img" alt="Smartphone">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphone</h5>
+                        <p class="card-text">Harga: Rp 3.500.000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="kaos.jpg" class="card-img-top product-img" alt="Kaos Polos">
+                    <div class="card-body">
+                        <h5 class="card-title">Kaos Alucard</h5>
+                        <p class="card-text">Harga: Rp 50.000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="blender.jpg" class="card-img-top product-img" alt="Blender">
+                    <div class="card-body">
+                        <h5 class="card-title">Blender</h5>
+                        <p class="card-text">Harga: Rp 750.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript untuk tombol detail -->
+    <script>
+        document.querySelectorAll(".detail-btn").forEach(button => {
+            button.addEventListener("click", function() {
+                alert("Detail Produk: " + this.getAttribute("data-product"));
+            });
+        });
+    </script>
+
+</body>
+</html>
