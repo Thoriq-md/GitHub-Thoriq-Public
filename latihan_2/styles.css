@@ -1,0 +1,116 @@
+/* Gaya untuk seluruh halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1d3557, #457b9d); /* Gradasi biru elegan */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f9fa; /* Teks putih lembut */
+}
+
+/* Kontainer utama kuis */
+.quiz-container {
+    width: 50%; /* Lebar kontainer */
+    max-width: 600px;
+    background-color: #ffffff; /* Latar belakang putih */
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    padding: 20px;
+    text-align: center;
+    color: #333; /* Teks abu-abu gelap */
+}
+
+/* Judul kuis */
+h1 {
+    font-size: 24px;
+    color: #1d3557; /* Biru gelap */
+    margin-bottom: 10px;
+}
+
+/* Tampilan skor */
+#score {
+    font-size: 18px;
+    color: #457b9d; /* Biru muda */
+    margin-bottom: 20px;
+}
+
+/* Kontainer soal */
+#question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #212529; /* Warna abu-abu gelap */
+}
+
+/* Timer */
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946; /* Merah cerah untuk menarik perhatian */
+    margin-bottom: 20px;
+}
+
+/* Daftar pilihan jawaban */
+#choices {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#choices li {
+    margin: 10px 0;
+}
+
+/* Tombol pilihan jawaban */
+button {
+    background-color: #457b9d; /* Biru muda */
+    color: #ffffff; /* Teks putih */
+    border: none;
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 12px;
+    width: 100%; /* Lebar penuh */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1d3557; /* Biru gelap saat hover */
+    transform: scale(1.05); /* Sedikit zoom */
+}
+
+button:active {
+    transform: scale(0.95); /* Efek menekan */
+}
+
+button:disabled {
+    background-color: #d3d3d3; /* Abu-abu untuk tombol tidak aktif */
+    cursor: not-allowed;
+}
+
+/* Umpan balik setelah menjawab */
+#feedback {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+    .quiz-container {
+        width: 90%; /* Lebar penuh untuk perangkat kecil */
+        padding: 15px;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
