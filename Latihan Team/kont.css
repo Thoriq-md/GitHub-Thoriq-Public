@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #022d5c;
+}
+
+.contact-card {
+    background: #bebcbc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}

@@ -1,0 +1,25 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x500/?event');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .container {
+    padding-bottom: 40px;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  

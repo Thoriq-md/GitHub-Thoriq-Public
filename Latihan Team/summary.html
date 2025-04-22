@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ringkasan Pendaftaran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-3">
+        <h1>Ringkasan Pendaftaran</h1>
+    </header>
+
+    <main class="container mt-4">
+        <!-- Tabel Data Pendaftaran -->
+        <table class="table table-bordered">
+            <thead class="table-primary">
+                <tr>
+                    <th>Nama Lengkap</th>
+                    <th>Email</th>
+                    <th>Event</th>
+                    <th>Jumlah Tiket</th>
+                    <th>Total Harga</th>
+                </tr>
+            </thead>
+            <tbody id="summaryTableBody"></tbody>
+        </table>
+
+        <!-- Kotak Ringkasan di bawah tabel -->
+        <div class="mt-4">
+            <div class="row">
+                <!-- Jumlah Tiket Terjual per Event -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Total Tiket Terjual per Event</h5>
+                            <p id="event1Tickets" class="fw-bold">Event NeoRhythm : 0 tiket</p>
+                            <p id="event2Tickets" class="fw-bold">Event NeoArt : 0 tiket</p>
+                            <p id="event3Tickets" class="fw-bold">Event NeoTech: 0 tiket</p>
+                            <p id="event4Tickets" class="fw-bold">Event NeoTaste: 0 tiket</p>
+                            <p id="event5Tickets" class="fw-bold">Event NeoPreneur: 0 tiket</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Total Pendapatan -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Total Pendapatan Keseluruhan</h5>
+                            <p id="totalRevenue" class="fw-bold">Rp 0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-danger mt-3" onclick="clearData()">Hapus Semua Data</button>
+    </main>
+
+    <script src="regisum.js"></script>
+    <script>
+        displaySummary();
+    </script>
+</body>
+</html>
